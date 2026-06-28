@@ -1,0 +1,7 @@
+import math
+
+sentence = input("Enter a sentence:")
+
+words = set(sentence.split ())
+print("Unique Words: ", sorted(words))
+print("Power:", math.pow(len(words),2))
