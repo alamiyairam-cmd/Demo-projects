@@ -1,0 +1,14 @@
+import random
+import math
+
+numbers = set()
+
+for i in range(10):
+    num = int(input("Enter Number: "))
+    numbers.add(num)
+
+t = tuple(numbers)
+
+print("Tuple:", t)
+print("Random Numbers:", random.sample(t, 3))
+print("Square Root:", math.sqrt(sum(t)))
