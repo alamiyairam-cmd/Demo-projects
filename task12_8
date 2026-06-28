@@ -1,0 +1,22 @@
+class Employee:
+    def __init__(self, empid, name, dept, salary):
+        self.empid = empid
+        self.name = name
+        self.details = (dept, salary)
+
+    def show_details(self):
+        print(self.empid, self.name, self.details)
+
+
+employees = {}
+
+for i in range(3):
+    empid = input("Employee ID: ")
+    name = input("Name: ")
+    dept = input("Department: ")
+    salary = input("Salary: ")
+
+    employees[empid] = Employee(empid, name, dept, salary)
+
+for emp in employees.values():
+    emp.show_details()
