@@ -1,0 +1,16 @@
+def manage_marks():
+    marks = []
+
+    # Input 5 marks
+    for i in range(5):
+        mark = int(input(f"Enter mark {i+1}: "))
+        marks.append(mark)
+
+    # Display results
+    print("Highest Marks:", max(marks))
+    print("Lowest Marks:", min(marks))
+    print("Average Marks:", sum(marks) / len(marks))
+
+
+# Call the function
+manage_marks()
